@@ -1,0 +1,21 @@
+.forms{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    border: 1px solid blue;
+    margin: 6px;
+  
+ 
+}
+.ankor{
+    height: 100px;
+    margin-top: 20px;
+}
+img{
+width: 70%;
+height: 350px;
+}
+
