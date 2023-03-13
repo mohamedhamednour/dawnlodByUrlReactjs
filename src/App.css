@@ -5,7 +5,6 @@
 }
 a{
     text-decoration: none;
-    border: 1px solid blue;
     margin: 6px;
   
  
@@ -13,9 +12,58 @@ a{
 .ankor{
     height: 100px;
     margin-top: 20px;
+    font-size: 19px;
+    padding: 15px;
 }
 img{
 width: 70%;
 height: 350px;
 }
 
+.imgbook{
+    width: 230px;
+    height: 200px;
+    margin: 10px;
+}
+
+.ankorbook{
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 3px;
+
+}
+.divimg{
+    width: 270px;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.light-mode {
+    background-color: white;
+    color: #000000 !important;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white !important;
+  }
+
+  .btnDark{
+    background: none;
+    border: none;
+  }
+  .fas{
+    font-size: 30px;
+    color: cornsilk;
+  }
+
+  .nav-item{
+    border: none;
+  }
+  li{
+    border: none;
+  }
+  .card-body{
+    background: initial !important;
+  }

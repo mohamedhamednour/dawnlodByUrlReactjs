@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import '../App.css'
+import { Helmet } from 'react-helmet';
 
 function Serch() {
   const [post, setpost] = React.useState();
@@ -30,6 +31,10 @@ function Serch() {
 
   return (
 <>
+<Helmet>
+          <title>serch by link</title>
+          <meta name="description" content="serch by link youtube" />
+        </Helmet>
 <div className="m-2 forms justify-content-cente">
       <form  className="w-75 d-block border border-primary text-center p-3" onSubmit={postdata}>
         <div className="mb-3">
@@ -59,7 +64,7 @@ function Serch() {
     <img src={result.thumb} alt="" />
     <center>{result.url ? 'quality' : ''}</center>
     <div  className="row">
-<h1 className="ankor">    {result.url ? result.url.slice(0,5).map((el)=> <a href={el.url} className=""> {el.quality}</a>) : ''}
+<h1 className="ankor">    {result.url ? result.url.slice(0,5).map((el)=> <a href={el.url} className=""> {el.quality} {el.downloadable ? 'download' : 'watch'}</a>) : ''}
 </h1>
     </div>
   </div>
