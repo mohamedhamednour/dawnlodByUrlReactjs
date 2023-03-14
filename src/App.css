@@ -46,7 +46,7 @@ height: 350px;
   
   .dark-mode {
     background-color: black;
-    color: white !important;
+    color: rgb(245, 226, 21) !important;
   }
 
   .btnDark{
@@ -66,4 +66,8 @@ height: 350px;
   }
   .card-body{
     background: initial !important;
+  }
+  .divinput{
+    display: block;
+    margin: auto !important;
   }

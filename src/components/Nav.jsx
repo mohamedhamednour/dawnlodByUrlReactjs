@@ -15,9 +15,7 @@ const Nav = ({handleModeChange ,state}) => {
         <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="/books">books</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+       
        
       
       </ul>
