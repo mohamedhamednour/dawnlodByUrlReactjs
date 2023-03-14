@@ -2,10 +2,17 @@ import axios from "axios";
 import React from "react";
 import "../App.css";
 import { Helmet } from "react-helmet";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Serch() {
   const [post, setpost] = React.useState();
   const [text, textresul] = React.useState();
+  const [message, setMessage] = React.useState('');
+  function handleButtonClick(text) {
+    setMessage('download ');
+    toast.success(text, { position: toast.POSITION.TOP_RIGHT });
+  }
+
 
   const [result, setresult] = React.useState({});
   console.log(result);
@@ -88,7 +95,7 @@ function Serch() {
                 {" "}
                 {result.url
                   ? result.url.slice(0, 5).map((el) => (
-                      <a href={el.url} className="">
+                      <a  onClick={el.downloadable ? ()=>handleButtonClick('download ') : ()=>handleButtonClick('watch just')} href={el.url} className="">
                         {" "}
                         {el.quality} {el.downloadable ? "download" : "watch"}
                       </a>
@@ -97,6 +104,7 @@ function Serch() {
               </h1>
             </div>
           </div>
+      <ToastContainer />
           <div class="card-footer text-muted">devolpe By mohamedhamed #M.H</div>
         </div>
       </h1>
