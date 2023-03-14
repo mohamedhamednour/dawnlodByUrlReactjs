@@ -79,10 +79,11 @@ function Book() {
          </button>
            )}
           </div> */}
-          <div className="col-sm-12 col-md-12 ">
+          <div className="col-sm-12  
+ col-md-12 ">
             <br />
 
-            <div className="row">
+            <div className="row justify-content-center">
               {book?.map((item) => [
                 <div
                   key={item.id}
